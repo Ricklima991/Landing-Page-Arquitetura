@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="./assets/ico/arquitetura.png"
+      type="image/x-icon" />
+
+    <!-- FONTS GOOGLE: INTER PESO 500, 600 | RALEWAY PESO 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet" />
+
+    <title>Arquitetura</title>
+  </head>
+  <body>
+    <!-- MENU SUPERIOR -->
+    <div id="menu-superior">
+      <h1 id="title-superior">Tradição em projetos de arquitetura</h1>
+      <p id="text-superior">Arquitetura residencial e comercial.</p>
+    </div>
+
+    <!-- MENU INFORMACIONAL -->
+    <div id="menu-informacional">
+      <div class="item">
+        <h2>850</h2>
+        <p>empreendimentos construídos</p>
+      </div>
+
+      <div class="item">
+        <h2>40</h2>
+        <p>anos de mercado e experiência</p>
+      </div>
+
+      <div class="item">
+        <h2>2.000,000</h2>
+        <p>m² em projetos construídos</p>
+      </div>
+    </div>
+
+    <!-- SEÇÃO INFORMATIVA -->
+    <div id="secao-informativa">
+      <div id="text-informacional">
+        <h1>Arquitetos com História e Experiência.</h1>
+        <br />
+        <p>
+          Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais
+          de 800 projetos e 2.000.000 de m² construídos, tendo como principal
+          proposta transformar em realidade os sonhos de seus clientes, criando
+          projetos personalizados, unindo a tradição e a modernidade em nossos
+          projetos.
+        </p>
+      </div>
+      <div id="photo-informacional">
+        <svg viewBox="0 0 160 200" id="photo" onclick="toggleImage()">
+          <clipPath>
+            <rect iwidth="120" height="200" />
+          </clipPath>
+          <image id="image-svg" xlink:href="./assets/img/image1.jpg" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- FORMULARIO DE CAPTURA -->
+    <form
+      id="formulario"
+      action="https://api.sheetmonkey.io/form/o7aoBindfHwoXxocwAmhUS"
+      method="post">
+      <h1>Conheça mais sobre nossos serviços:</h1>
+      <input type="text" placeholder="Nome" name="Name" required /> <br />
+      <input type="text" placeholder="Email" name="Email" required /> <br />
+      <input
+        type="hidden"
+        name="Created"
+        value="x-sheetmonkey-current-date-time" />
+      <button>Fale Conosco</button>
+    </form>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

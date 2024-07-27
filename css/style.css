@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+/* MENU SUPERIOR */
+
+#menu-superior {
+    background: #303030;
+    padding-top: 160px;
+}
+
+#title-superior {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 72px;
+    letter-spacing: -1.5px;
+    color: white;
+    margin: 0px 20px 0px 62px;
+}
+
+#text-superior {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+
+    margin: 20px 20px 0px 62px;
+    padding-bottom: 80px;
+}
+
+/* MENU-INFORMACIONAL */
+
+#menu-informacional {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    background-color: #f1f1f1;
+    padding: 60px 0px 44px 0px;
+}
+
+.item {
+    display: grid;
+    position: relative;
+    justify-self: center;
+}
+
+/* SEÇÃO INFORMATIVA */
+
+#secao-informativa {
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: 1fr 0.7fr;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 100px 66px 20px;
+}
+
+#text-informacional p{
+    font-size: 24px;
+    text-align: justify;
+}
+
+#photo-informacional {
+    margin-left: 64px;
+}
+
+#photo {
+    border-radius: 30px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#photo:hover {
+    transform: translateY(-9px);
+    transition-duration: 0.9s;
+    box-shadow: 0 20px 30px #929292;
+}
+
+#photo-informacional #image-svg {
+    width: 110%;
+}
+
+/* FORMULÁRIO */
+
+#formulario {
+    margin-top: 64px;
+    padding: 60px;
+    background-color: #303030;
+    color: white;
+    text-align: center;
+}
+
+#formulario h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#formulario input {
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+
+    padding: 10px;
+
+    width: 280px;
+    height: 30px;
+
+    margin-top: 30px;
+}
+
+#formulario input:last-of-type {
+    margin-top: 45px;
+}
+
+#formulario button {
+    width: 170px;
+    height: 40px;
+
+    background-color: #C07212;
+    border-radius: 8px;
+    border: none;
+
+    color: white;
+
+    margin-top: 35px;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#formulario button:hover {
+    box-shadow: 0px 10px 15px #58370e;
+    transform: translateY(-7px);
+    transition-duration: 0.7s;
+}
+
+
+/* RESPOSIVIDADE */
+
+@media(max-width: 960px) {
+    #menu-informacional {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item {
+        justify-items: center;
+    }
+    #secao-informativa {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding: 40px;
+    }
+    #photo-informacional {
+        margin: 20px 0 0 0;
+    }
+
+    #photo {
+        width: 390px;
+    }
+
+}
+
+@media(max-width: 520px) {
+    #secao-informativa {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding: 30px;
+    }
+    #photo-informacional {
+        margin: 20px 0 0 0;
+    }
+    #photo {
+        width: 300px;
+    }
+
+    #formulario {
+        margin-top: 35px;
+        padding: 20px;
+    }
+
+    #formulario h1{
+        font-size: 18px;
+    }
+
+    #formulario input {
+        width: 220px;
+        height: 30px;
+    }
+
+}
+
+@media(max-width: 340px) {
+    #title-superior {
+        font-size: 40px;
+        margin: 0px 20px 0px 46px;
+    }
+
+    #text-superior {
+        margin: 20px 20px 0px 46px;
+    }
+
+    #secao-informativa {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding: 20px;
+    }
+    #photo-informacional {
+        margin: 20px 0 0 0;
+    }
+    #photo {
+        width: 260px;
+    }
+
+    #formulario {
+        margin-top: 35px;
+        padding: 20px;
+    }
+
+    #formulario h1{
+        font-size: 14px;
+    }
+
+    #formulario input {
+        width: 220px;
+        height: 30px;
+    }
+
+}
+
