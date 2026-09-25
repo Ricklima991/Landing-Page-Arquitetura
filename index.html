@@ -3,48 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tradição em projetos de arquitetura residencial e comercial. Desde 2002, mais de 800 projetos e 2.000.000 de m² construídos." />
-  <title>Tradição em Projetos de Arquitetura</title>
+  <meta name="description" content="Residencial Tradição — apartamentos à venda. Arquitetura autoral, 850 empreendimentos entregues e 40 anos de experiência. Agende sua visita." />
+  <title>Residencial Tradição — Apartamentos à Venda</title>
 
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="shortcut icon" href="./assets/ico/arquitetura.png" type="image/x-icon" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- HERO -->
+  <!-- HERO 3D -->
   <header id="menu-superior">
-    <div class="container">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <span class="hero-badge"><span class="pulse"></span> Lançamento · Últimas unidades</span>
       <h1 id="title-superior">Tradição em projetos de arquitetura</h1>
-      <p id="text-superior">Arquitetura residencial e comercial.</p>
+      <p id="text-superior">Arquitetura residencial e comercial — agora em apartamentos prontos para morar.</p>
+      <div class="hero-actions">
+        <a href="#formulario" class="btn-primary">Quero meu apartamento</a>
+        <a href="#secao-informativa" class="btn-ghost">Ver o residencial</a>
+      </div>
+      <div class="hero-mini-stats">
+        <div><strong>850</strong><span>empreendimentos</span></div>
+        <div><strong>40</strong><span>anos de mercado</span></div>
+        <div><strong>2.000.000</strong><span>m² construídos</span></div>
+      </div>
+    </div>
+    <div class="hero-tilt-card" aria-hidden="true">
+      <img src="./assets/img/image2.jpg" alt="" />
+      <div class="tilt-glow"></div>
     </div>
   </header>
 
   <!-- FAIXA DE NÚMEROS -->
-  <section id="menu-informacional" aria-label="Números do escritório">
+  <section id="menu-informacional" aria-label="Números do empreendimento">
     <div class="container stats-grid">
-      <div class="item">
-        <h2>850</h2>
+      <div class="item glass">
+        <h2 data-count="850">850</h2>
         <p>empreendimentos construídos</p>
       </div>
-      <div class="item">
-        <h2>40</h2>
+      <div class="item glass">
+        <h2 data-count="40">40</h2>
         <p>anos de mercado e experiência</p>
       </div>
-      <div class="item">
+      <div class="item glass">
         <h2>2.000.000</h2>
         <p>m² em projetos construídos</p>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO INFORMATIVA -->
+  <!-- VITRINE DO RESIDENCIAL -->
   <main id="secao-informativa">
     <div class="container info-grid">
       <div id="text-informacional">
+        <span class="kicker">Residencial Tradição</span>
         <h1>Arquitetos com História e Experiência.</h1>
         <p>
           Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais
@@ -53,9 +70,18 @@
           projetos personalizados, unindo a tradição e a modernidade em nossos
           projetos.
         </p>
+        <ul class="feature-list">
+          <li><i>◆</i> Plantas inteligentes de 2 e 3 quartos</li>
+          <li><i>◆</i> Lazer completo com vista panorâmica</li>
+          <li><i>◆</i> Condições de lançamento e ITBI grátis</li>
+        </ul>
+        <a href="#formulario" class="btn-primary">Agendar visita ao decorado</a>
       </div>
       <figure id="photo-informacional">
-        <img id="photo" src="./assets/img/image1.jpg" alt="Projeto de arquitetura — clique para ver mais fotos" title="Clique para ver mais fotos" />
+        <div class="photo-3d" id="photoTilt">
+          <img id="photo" src="./assets/img/image1.jpg" alt="Apartamento decorado — clique para ver mais fotos" title="Clique para ver mais fotos" />
+          <span class="photo-chip">Tour 360° · clique na foto</span>
+        </div>
         <div class="photo-dots" aria-hidden="true">
           <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
         </div>
@@ -65,15 +91,20 @@
 
   <!-- FORMULÁRIO DE CAPTURA -->
   <section id="formulario">
-    <div class="container">
-      <h1>Conheça mais sobre nossos serviços:</h1>
-      <form action="https://api.sheetmonkey.io/form/o7aoBindfHwoXxocwAmhUS" method="post">
+    <div class="container form-grid">
+      <div class="form-copy">
+        <span class="kicker">Atendimento exclusivo</span>
+        <h1>Conheça mais sobre nossos serviços:</h1>
+        <p>Deixe seus dados e receba a tabela de disponibilidade, plantas e condições de pagamento direto no seu e-mail.</p>
+      </div>
+      <form action="https://api.sheetmonkey.io/form/o7aoBindfHwoXxocwAmhUS" method="post" class="glass">
         <label class="sr-only" for="nome">Nome</label>
         <input id="nome" type="text" placeholder="Nome" name="Name" required autocomplete="name" />
         <label class="sr-only" for="email">Email</label>
         <input id="email" type="email" placeholder="Email" name="Email" required autocomplete="email" />
         <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
         <button type="submit">Fale Conosco</button>
+        <small class="form-note">Sem spam. Seus dados estão protegidos.</small>
       </form>
     </div>
   </section>
