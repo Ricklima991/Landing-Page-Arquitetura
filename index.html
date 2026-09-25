@@ -3,112 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Residencial Tradição — apartamentos à venda. Arquitetura autoral, 850 empreendimentos entregues e 40 anos de experiência. Agende sua visita." />
-  <title>Residencial Tradição — Apartamentos à Venda</title>
+  <meta name="description" content="Residencial Tradição — apartamentos à venda com arquitetura autoral. 40 anos de experiência, 850 empreendimentos. Agende sua visita." />
+  <title>Residencial Tradição — Arquitetura & Incorporação</title>
 
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="shortcut icon" href="./assets/ico/arquitetura.png" type="image/x-icon" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+<div class="page">
 
-  <!-- HERO 3D -->
-  <header id="menu-superior">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-grid-lines" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <span class="hero-badge"><span class="pulse"></span> Lançamento · Últimas unidades</span>
-      <h1 id="title-superior">Tradição em projetos de arquitetura</h1>
-      <p id="text-superior">Arquitetura residencial e comercial — agora em apartamentos prontos para morar.</p>
-      <div class="hero-actions">
-        <a href="#formulario" class="btn-primary">Quero meu apartamento</a>
-        <a href="#secao-informativa" class="btn-ghost">Ver o residencial</a>
-      </div>
-      <div class="hero-mini-stats">
-        <div><strong>850</strong><span>empreendimentos</span></div>
-        <div><strong>40</strong><span>anos de mercado</span></div>
-        <div><strong>2.000.000</strong><span>m² construídos</span></div>
-      </div>
-    </div>
-    <div class="hero-tilt-card" aria-hidden="true">
-      <img src="./assets/img/image2.jpg" alt="" />
-      <div class="tilt-glow"></div>
+  <!-- 1. NAVBAR -->
+  <header class="nav">
+    <a class="brand" href="#topo" aria-label="Residencial Tradição">
+      <span class="brand-mark">T</span>
+      <span class="brand-text">TRADIÇÃO<small>Arquitetura e Incorporação</small></span>
+    </a>
+    <nav class="links" aria-label="Navegação principal">
+      <a href="#topo" class="active">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#destaque">Lançamento</a>
+      <a href="#depoimento">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-side">
+      <a href="#contato" class="pill">Agendar visita <span class="arrow">→</span></a>
+      <a class="icon-btn" href="tel:+5511918266394" aria-label="Telefone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+      <a class="icon-btn" href="https://wa.me/5511918266394" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.6 14.1c-.2.7-1.4 1.3-1.9 1.4-.5 0-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.7.9-.5 1.2.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1.2z"/></svg></a>
+      <a class="icon-btn" href="#contato" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
     </div>
   </header>
 
-  <!-- FAIXA DE NÚMEROS -->
-  <section id="menu-informacional" aria-label="Números do empreendimento">
-    <div class="container stats-grid">
-      <div class="item glass">
-        <h2 data-count="850">850</h2>
-        <p>empreendimentos construídos</p>
+  <!-- 2. HERO -->
+  <section class="hero" id="topo">
+    <div class="hero-chips">
+      <div class="chip"><strong>40+</strong><span>anos de experiência</span></div>
+      <div class="chip"><strong>850+</strong><span>empreendimentos</span></div>
+      <div class="chip"><strong>RGS</strong><span>Rio Grande da Serra, SP</span></div>
+    </div>
+    <h1 class="hero-brand">TRADIÇÃO</h1>
+    <p class="hero-sub">ARQUITETURA &amp; INCORPORAÇÃO</p>
+    <div class="hero-foot">
+      <div class="hero-left">
+        <h2>Projetamos espaços.<br />Elevamos vidas.</h2>
+        <p>Apartamentos que inspiram. Interiores que refletem você.</p>
+        <span class="since">DESDE 2002</span>
       </div>
-      <div class="item glass">
-        <h2 data-count="40">40</h2>
-        <p>anos de mercado e experiência</p>
+      <a href="#projetos" class="pill pill-lg hero-cta">Ver Projetos <span class="arrow">→</span></a>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- 3. SOBRE -->
+  <section class="about" id="sobre">
+    <div class="about-text">
+      <span class="eyebrow">SOBRE NÓS</span>
+      <h2>Inspirados por propósito.<br />Guiados pelo detalhe.</h2>
+      <p>A Tradição une arquitetura e incorporação em espaços atemporais desde 2002. Tradição e modernidade em cada planta, do projeto à entrega das chaves.</p>
+      <div class="mini-features">
+        <div><span class="mini-icon">◎</span><strong>Projeto Personalizado</strong><small>Plantas feitas para o seu jeito de morar.</small></div>
+        <div><span class="mini-icon">◇</span><strong>Design Atemporal</strong><small>Acabamentos que valorizam com o tempo.</small></div>
+        <div><span class="mini-icon">⬢</span><strong>Do Projeto à Entrega</strong><small>Acompanhamento em cada etapa da obra.</small></div>
       </div>
-      <div class="item glass">
-        <h2>2.000.000</h2>
-        <p>m² em projetos construídos</p>
+      <a href="#contato" class="pill">Saiba Mais <span class="arrow">→</span></a>
+    </div>
+    <figure class="about-photo">
+      <img src="./assets/img/image1.jpg" alt="Living do apartamento decorado" />
+      <figcaption class="float-badge"><strong>Desde 2002</strong><span>Construindo o futuro</span></figcaption>
+    </figure>
+  </section>
+
+  <!-- 4. SERVIÇOS -->
+  <section class="services" id="servicos">
+    <span class="eyebrow">NOSSOS SERVIÇOS</span>
+    <h2>Soluções completas para cada espaço.</h2>
+    <div class="service-grid">
+      <div class="service-card"><span class="s-icon">▭</span><h3>Projeto Arquitetônico</h3><p>Plantas autorais que unem forma e função.</p><span class="s-arrow">→</span></div>
+      <div class="service-card"><span class="s-icon">▤</span><h3>Design de Interiores</h3><p>Interiores que expressam o seu estilo.</p><span class="s-arrow">→</span></div>
+      <div class="service-card"><span class="s-icon">⌂</span><h3>Residencial</h3><p>Apartamentos pensados para a sua vida.</p><span class="s-arrow">→</span></div>
+      <div class="service-card"><span class="s-icon">▦</span><h3>Comercial</h3><p>Espaços que valorizam o seu negócio.</p><span class="s-arrow">→</span></div>
+      <div class="service-card"><span class="s-icon">◈</span><h3>Áreas Comuns</h3><p>Lazer completo para toda a família.</p><span class="s-arrow">→</span></div>
+      <div class="service-card"><span class="s-icon">✎</span><h3>Consultoria</h3><p>Orientação expert para decidir melhor.</p><span class="s-arrow">→</span></div>
+    </div>
+  </section>
+
+  <!-- 5. PROJETOS SELECIONADOS -->
+  <section class="projects" id="projetos">
+    <div class="section-head">
+      <div><span class="eyebrow">PROJETOS SELECIONADOS</span>
+      <h2>Espaços que falam<br />nossa linguagem.</h2></div>
+      <a href="#destaque" class="pill pill-sm">Explorar Projetos <span class="arrow">→</span></a>
+    </div>
+    <div class="project-row">
+      <img src="./assets/img/fachada-dia.jpg" alt="Fachada do residencial ao entardecer" />
+      <img src="./assets/img/image1.jpg" alt="Living integrado do decorado" />
+      <img src="./assets/img/proj-noite.jpg" alt="Área de lazer com piscina" />
+      <img src="./assets/img/dormitorio.jpg" alt="Suíte master do decorado" />
+    </div>
+  </section>
+
+  <!-- 6. PROJETO EM DESTAQUE -->
+  <section class="featured" id="destaque">
+    <div class="featured-text">
+      <span class="eyebrow">LANÇAMENTO</span>
+      <h2>Morar moderno.<br />Elegância atemporal.</h2>
+      <p>O equilíbrio perfeito entre arquitetura autoral e conforto diário, com lazer completo e acabamento premium.</p>
+      <ul class="specs">
+        <li><span>◎</span> Localização: Rio Grande da Serra, SP</li>
+        <li><span>◎</span> Tipo: 2 e 3 quartos com suíte</li>
+        <li><span>◎</span> Área: 68 a 92 m² privativos</li>
+      </ul>
+      <a href="#contato" class="pill">Ver Projeto <span class="arrow">→</span></a>
+    </div>
+    <img class="featured-photo" src="./assets/img/image2.jpg" alt="Fachada do Residencial Tradição à noite" />
+  </section>
+
+  <!-- 7. DEPOIMENTO -->
+  <section class="testimonial" id="depoimento">
+    <div class="t-left">
+      <span class="eyebrow">CLIENTES AMAM NOSSO TRABALHO</span>
+      <h2>Aprovado por quem<br />já mora aqui.</h2>
+      <div class="t-arrows">
+        <button id="tPrev" aria-label="Depoimento anterior">‹</button>
+        <button id="tNext" aria-label="Próximo depoimento">›</button>
+      </div>
+    </div>
+    <div class="t-card">
+      <span class="quote">“</span>
+      <p id="tText">A Tradição transformou nosso sonho em realidade. Acabamento impecável e entrega no prazo. Morar aqui superou tudo.</p>
+      <div class="t-stars">★★★★★ <small><strong>4.9</strong> no Google</small></div>
+      <div class="t-author">
+        <img src="./assets/img/avatar.jpg" alt="Foto da cliente" />
+        <span><strong id="tName">Marina S.</strong><small>Moradora · Bloco A</small></span>
       </div>
     </div>
   </section>
 
-  <!-- VITRINE DO RESIDENCIAL -->
-  <main id="secao-informativa">
-    <div class="container info-grid">
-      <div id="text-informacional">
-        <span class="kicker">Residencial Tradição</span>
-        <h1>Arquitetos com História e Experiência.</h1>
-        <p>
-          Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais
-          de 800 projetos e 2.000.000 de m² construídos, tendo como principal
-          proposta transformar em realidade os sonhos de seus clientes, criando
-          projetos personalizados, unindo a tradição e a modernidade em nossos
-          projetos.
-        </p>
-        <ul class="feature-list">
-          <li><i>◆</i> Plantas inteligentes de 2 e 3 quartos</li>
-          <li><i>◆</i> Lazer completo com vista panorâmica</li>
-          <li><i>◆</i> Condições de lançamento e ITBI grátis</li>
-        </ul>
-        <a href="#formulario" class="btn-primary">Agendar visita ao decorado</a>
+  <!-- 8. CTA FINAL + FORMULÁRIO -->
+  <section class="cta" id="contato">
+    <div class="cta-text">
+      <h2>Vamos criar algo extraordinário juntos.</h2>
+      <p>Agende uma visita com nossos especialistas.</p>
+      <div class="cta-contacts">
+        <span>✆ (11) 91826-6394</span>
+        <span>✉ contato@residencialtradicao.com.br</span>
+        <span>⌖ Rio Grande da Serra, SP</span>
       </div>
-      <figure id="photo-informacional">
-        <div class="photo-3d" id="photoTilt">
-          <img id="photo" src="./assets/img/image1.jpg" alt="Apartamento decorado — clique para ver mais fotos" title="Clique para ver mais fotos" />
-          <span class="photo-chip">Tour 360° · clique na foto</span>
-        </div>
-        <div class="photo-dots" aria-hidden="true">
-          <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
-        </div>
-      </figure>
-    </div>
-  </main>
-
-  <!-- FORMULÁRIO DE CAPTURA -->
-  <section id="formulario">
-    <div class="container form-grid">
-      <div class="form-copy">
-        <span class="kicker">Atendimento exclusivo</span>
-        <h1>Conheça mais sobre nossos serviços:</h1>
-        <p>Deixe seus dados e receba a tabela de disponibilidade, plantas e condições de pagamento direto no seu e-mail.</p>
-      </div>
-      <form action="https://api.sheetmonkey.io/form/o7aoBindfHwoXxocwAmhUS" method="post" class="glass">
-        <label class="sr-only" for="nome">Nome</label>
-        <input id="nome" type="text" placeholder="Nome" name="Name" required autocomplete="name" />
-        <label class="sr-only" for="email">Email</label>
-        <input id="email" type="email" placeholder="Email" name="Email" required autocomplete="email" />
+      <form class="cta-form" action="https://api.sheetmonkey.io/form/o7aoBindfHwoXxocwAmhUS" method="post">
+        <input type="text" name="Name" placeholder="Nome" required autocomplete="name" aria-label="Nome" />
+        <input type="email" name="Email" placeholder="Email" required autocomplete="email" aria-label="Email" />
         <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-        <button type="submit">Fale Conosco</button>
-        <small class="form-note">Sem spam. Seus dados estão protegidos.</small>
+        <button type="submit">Quero visitar</button>
       </form>
     </div>
+    <div class="cta-photo">
+      <img src="./assets/img/image3.jpg" alt="Cozinha do apartamento decorado" />
+      <a href="#contato" class="pill pill-float">Agendar Visita <span class="arrow">→</span></a>
+    </div>
   </section>
 
-  <script src="./js/index.js"></script>
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <span class="brand-text">TRADIÇÃO<small>Arquitetura e Incorporação</small></span>
+    <p>© 2026 Residencial Tradição. Todos os direitos reservados.</p>
+    <span class="legal">Privacidade · Termos</span>
+    <span class="social">◎ ◉ ○</span>
+  </footer>
+
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>
